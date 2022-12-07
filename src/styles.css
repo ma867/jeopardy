@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font: 14px 'Public Sans', Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  align-items: center;
+  background-color: #3E5F73;
+  color: #f5f5f5;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.1);
+}
+
+#root {
+  margin-bottom: auto;
+  margin-top: auto;
+  padding: 50px 0;
+  text-align: center;
+  width: 600px;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+h1, h2 {
+  line-height: 100%;
+}
+
+h2 {
+  color: #EAD27A;
+  margin: 20px 0;
+}
+
+h2, h2 span {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+h2.margin {
+  margin: 50px 0;
+}
+
+h2.margin.answer {
+  margin: 0px;
+  transform: scale(0);
+  transition: .04s;
+}
+
+h2.margin.answer.show {
+  margin-top: 50px;
+  transform: scale(1);
+}
+
+h2 span {
+  color: #f5f5f5;
+  text-transform: capitalize;
+}
+
+#score-buttons {
+  margin-bottom: 50px;
+}
+
+button, input {
+  border: none;
+  border-radius: 4px;
+  color: #f5f5f5;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 3px;
+  padding: 11px 15px 10px 15px;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.1);
+}
+
+button.decrease {
+  background-color: #FE938C;
+}
+
+
+.increase {
+  background-color: #6191B5;
+}
+
+button.reset {
+  background-color: #E81D37;
+}
+
+button.get-question, button.reveal-question {
+  background-color: #1A2650;
+  color: #f5f5f5;
+  width: 300px;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+.hide-question {
+  display: none;
+}
+
+.hide-question.show {
+  display: block;
+}
+
+.question {
+  display: none;
+}
+
+.question.show {
+  display: block;
+}
